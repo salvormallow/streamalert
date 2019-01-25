@@ -1,10 +1,28 @@
 {
   "id": "prod",
   "modules": {
+    "cloudtrail": {
+      "enable_kinesis": true,
+      "enable_logging": true,
+      "send_to_cloudwatch": true
+    },
+    "cloudwatch": {
+      "enabled": true
+    },
     "cloudwatch_monitoring": {
       "enabled": true,
       "kinesis_alarms_enabled": false,
       "lambda_alarms_enabled": true
+    },
+    "kinesis": {
+      "streams": {
+        "retention": 96,
+        "shards": 10
+      }
+    },
+    "kinesis_events": {
+      "batch_size": 10,
+      "enabled": true
     },
     "stream_alert": {
       "classifier_config": {

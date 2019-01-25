@@ -1,8 +1,8 @@
 {
   "account": {
-    "aws_account_id": "AWS_ACCOUNT_ID_GOES_HERE",
-    "kms_key_alias": "PREFIX_GOES_HERE_streamalert_secrets",
-    "prefix": "PREFIX_GOES_HERE",
+    "aws_account_id": "009715504418",
+    "kms_key_alias": "ryxias20190211_streamalert_secrets",
+    "prefix": "ryxias20190211",
     "region": "us-east-1"
   },
   "general": {
@@ -42,11 +42,11 @@
   },
   "s3_access_logging": {
     "create_bucket": true,
-    "logging_bucket": "PREFIX_GOES_HERE.streamalert.s3-logging"
+    "logging_bucket": "ryxias20190211.streamalert.s3-logging"
   },
   "terraform": {
     "create_bucket": true,
-    "tfstate_bucket": "PREFIX_GOES_HERE.streamalert.terraform.state",
+    "tfstate_bucket": "ryxias20190211.streamalert.terraform.state",
     "tfstate_s3_key": "stream_alert_state/terraform.tfstate"
   }
 }

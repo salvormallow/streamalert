@@ -6,6 +6,13 @@
         "ghe",
         "osquery"
       ]
+    },
+    "ryxias20190211_prod_stream_alert_kinesis": {
+      "logs": [
+        "cloudwatch",
+        "ryxias",
+        "streamquery"
+      ]
     }
   },
   "s3": {
@@ -14,6 +21,11 @@
         "cloudtrail",
         "carbonblack",
         "fleet"
+      ]
+    },
+    "ryxias20190211.prod.sample.bucket": {
+      "logs": [
+        "cloudtrail"
       ]
     }
   },
@@ -25,6 +37,11 @@
     }
   },
   "stream_alert_app": {
+    "prefix_cluster_aliyun_actiontrail_sm-app-name_app": {
+      "logs": [
+        "aliyun"
+      ]
+    },
     "prefix_cluster_box_admin_events_sm-app-name_app": {
       "logs": [
         "box"
@@ -58,11 +75,6 @@
     "prefix_cluster_slack_integration_sm-app-name_app": {
       "logs": [
         "slack"
-      ]
-    },
-    "prefix_cluster_aliyun_actiontrail_sm-app-name_app": {
-      "logs": [
-        "aliyun"
       ]
     }
   }

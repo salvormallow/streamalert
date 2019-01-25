@@ -3,27 +3,39 @@
     "sample-lambda": "function-name:qualifier"
   },
   "aws-s3": {
-    "bucket": "aws-s3-bucket"
+    "bucket": "aws-s3-bucket",
+    "ryxias": "ryxias20190211.streamalerts"
   },
   "aws-sns": {
+    "ryxias": "test_ryxias",
     "sample-topic": "sample-topic-name"
   },
   "aws-sqs": {
     "sample-queue": "sample-queue-name"
   },
   "demisto": [
-    "sample-integration"
+    "sample-integration",
+    "derek-3"
   ],
   "komand": [
     "sample-integration"
   ],
   "pagerduty": [
-    "sample-integration"
+    "sample-integration",
+    "staging"
+  ],
+  "pagerduty-incident": [
+    "staging",
+    "staging-2"
+  ],
+  "pagerduty-v2": [
+    "staging"
   ],
   "phantom": [
     "sample-integration"
   ],
   "slack": [
-    "sample-channel"
+    "sample-channel",
+    "staging"
   ]
 }

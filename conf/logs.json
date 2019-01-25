@@ -1450,6 +1450,30 @@
       }
     }
   },
+  "ryxias:message": {
+    "parser": "json",
+    "schema": {
+      "ryxias": "string",
+      "message": "string",
+      "event_data": {}
+    }
+  },
+  "streamquery:version1": {
+    "parser": "json",
+    "schema": {
+      "streamquery_schema_version": "string",
+      "execution": {},
+      "data": {}
+    },
+    "configuration": {
+      "log_patterns": {
+        "streamquery_schema_version": [
+          "0.*.*",
+          "1.*.*"
+        ]
+      }
+    }
+  },
   "carbonblack:watchlist.storage.hit.process": {
     "schema": {
       "cb_server": "string",
