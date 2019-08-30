@@ -20,16 +20,25 @@ from stream_alert_cli.config import CLIConfig
 from stream_alert_cli.configure.handler import ConfigureCommand
 from stream_alert_cli.kinesis.handler import KinesisCommand
 from stream_alert_cli.logger import set_logger_levels
+from stream_alert_cli.lookup_tables.handler import LookupTablesCommand
 from stream_alert_cli.manage_lambda.deploy import DeployCommand
 from stream_alert_cli.manage_lambda.rollback import RollbackCommand
-from stream_alert_cli.metrics_alarms.handler import CreateMetricAlarmCommand, \
-    CreateClusterMetricAlarmCommand, CustomMetricsCommand
+from stream_alert_cli.metrics_alarms.handler import (
+    CreateMetricAlarmCommand,
+    CreateClusterMetricAlarmCommand,
+    CustomMetricsCommand,
+)
 from stream_alert_cli.outputs.handler import OutputCommand
 from stream_alert_cli.rule_table import RuleStagingCommand
 from stream_alert_cli.status.handler import StatusCommand
 from stream_alert_cli.terraform.generate import TerraformGenerateCommand
-from stream_alert_cli.terraform.handlers import TerraformCleanCommand, TerraformBuildCommand, \
-    TerraformDestroyCommand, TerraformInitCommand, TerraformListTargetsCommand
+from stream_alert_cli.terraform.handlers import (
+    TerraformBuildCommand,
+    TerraformCleanCommand,
+    TerraformDestroyCommand,
+    TerraformInitCommand,
+    TerraformListTargetsCommand
+)
 from stream_alert_cli.test.handler import TestCommand
 from stream_alert_cli.threat_intel.handler import ThreatIntelCommand
 from stream_alert_cli.threat_intel_downloader.handler import ThreatIntelDownloaderCommand
@@ -95,7 +104,7 @@ class StreamAlertCliCommandRepository:
             'init': TerraformInitCommand,
             'kinesis': KinesisCommand,
             'list-targets': TerraformListTargetsCommand,
-            # 'lookup-tables': LookupTablesCommand,
+            'lookup-tables': LookupTablesCommand,
             'output': OutputCommand,
             'rollback': RollbackCommand,
             'rule-staging': RuleStagingCommand,
